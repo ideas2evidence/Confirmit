@@ -18,6 +18,10 @@ function getMousePosition(html, event) {
     textArea.value = old + outputCoordinates; 
 } 
 
+
+//The query selector decides where to listen. 
+// if "html" is selected, all mouse clicks made in 
+// that specific browser tab is counted. 
 let htmlElem = document.querySelector("html"); 
 
 htmlElem.addEventListener("mousedown", function (e) { 
