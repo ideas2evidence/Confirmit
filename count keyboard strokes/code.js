@@ -19,7 +19,9 @@ function countKeyStrokes(html, event) {
 }
 
 
-
+//The query selector decides where to listen. 
+// if "html" is selected, all key strokes made in 
+// that specific browser tab is counted. 
 let nodeElement = document.querySelector("#q1_input");
 
 nodeElement.addEventListener("keydown", function (e) {
