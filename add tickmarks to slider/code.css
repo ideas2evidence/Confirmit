@@ -1,0 +1,29 @@
+/*
+Requirements:
+- Numerical node dressed as slider
+*/
+
+
+/*
+Aim:
+- Add tick marks beneath the slider
+*/
+
+/*Add to node-specific CSS or global custom CSS*/
+
+/* Slider ticks */
+.slider-ticks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    }
+
+.slider-ticks div {
+    width: 2px;
+    height: 5px;
+    background-color: #cccccc; /*Standard grey as in Confirmit*/
+    margin: auto;
+    margin-top: 3px;
+    }
+    
