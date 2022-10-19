@@ -1,0 +1,34 @@
+/*
+Requirements:
+- Numerical node dressed as slider
+*/
+
+/*
+Aim:
+- Remove min and max labels (numerical) and insert a string (numerical or alfanumerical) of you own choosing
+*/
+
+/*Add to node-specific CSS*/
+
+/*MIN-VALUE*/
+li.cf-numeric-slider-question__label.cf-numeric-slider-question__label--min-value {
+visibility: hidden;
+}
+
+li.cf-numeric-slider-question__label.cf-numeric-slider-question__label--min-value::after { 
+  content: "YOUR STRING HERE";
+  font-weight: bold;
+  visibility: visible;
+}
+
+/*MAX-VALUE*/
+li.cf-numeric-slider-question__label.cf-numeric-slider-question__label--max-value {
+visibility: hidden;
+}
+
+li.cf-numeric-slider-question__label.cf-numeric-slider-question__label--max-value::before { 
+  content: "YOUR STRING HERE";
+  font-weight: bold;
+  visibility: visible;
+}
+
