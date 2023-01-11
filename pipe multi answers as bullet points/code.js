@@ -18,17 +18,24 @@ function punktlisteFraMulti(qID, otherIndex) {
 
     var multi = f(qID);
 
+    // If there is an other text box, collect the string
     if(otherIndex){
         var open = f(qID + "_" + otherIndex + "_other");
     }
 
+    //if there is response in multi
     if (multi.toBoolean()) {
 
+        // collect labels and indexes of the selected answers
         var categoryLabels = multi.categoryLabels();
         var categoryValues = multi.categories();
 
+        // initiate an html string
         var htmlString = "<ul>";
 
+        // for each selected answer in multi, add a bulletpoint containing its label
+        // if the selected answer is a an other text box, and the respondents answer to tha
+        // answer label.
         for (var i = 0; i < categoryValues.length; i++) {
             if (categoryValues[i] == otherIndex && otherIndex) {
                 htmlString += "<li>" + categoryLabels[i] + " " + open.get() + "</li>"
@@ -36,8 +43,11 @@ function punktlisteFraMulti(qID, otherIndex) {
                 htmlString += "<li>" + categoryLabels[i] + "</li>"
             }
         }
+
+        // close  the html
         htmlString += "</ul>";
 
+        // return htmlstring
         return htmlString;
     }
 }
