@@ -18,13 +18,13 @@ function punktlisteFraMulti(qID, otherIndex) {
 
     var multi = f(qID);
 
-    // If there is an other text box, collect the string
-    if(otherIndex){
-        var open = f(qID + "_" + otherIndex + "_other");
-    }
-
     //if there is response in multi
     if (multi.toBoolean()) {
+
+            // If there is an other text box, collect the string
+        if(otherIndex){
+            var open = f(qID + "_" + otherIndex + "_other");
+        }
 
         // collect labels and indexes of the selected answers
         var categoryLabels = multi.categoryLabels();
