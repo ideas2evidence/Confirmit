@@ -94,7 +94,6 @@ function registerInteraction(qID){
     }
 
     storeNode.setValue(prev_answers);
-
     
     //console.log(qID + ": Interaction!")
 };
