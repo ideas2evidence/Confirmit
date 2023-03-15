@@ -1,0 +1,24 @@
+/* Add the following to your global css*/
+
+/* Slider Labels */
+.slider-labels {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 14px;
+    color: #cccccc;
+    }
+    
+    /* Reduce Font size on some mobile screens */
+    @media only screen and (max-width: 600px) {
+    .slider-labels {
+    font-size: 12px;
+    }
+    }
+    
+    .slider-labels div {
+    width: calc((604px*0.9524)/21);
+    text-align: center;
+    margin: auto;
+    }
