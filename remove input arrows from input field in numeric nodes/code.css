@@ -1,0 +1,15 @@
+/*
+If you need to remove the input arrows from the input field in numeric nodes copy the following
+either in node specific css within <style></style> or to global css
+*/
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button { 
+  -webkit-appearance: none; 
+  margin: 1px; 
+} 
+
+/* Firefox */ 
+input[type=number] { 
+  -moz-appearance: textfield; 
+}
